@@ -1,0 +1,63 @@
+.navy-image {
+  width: 60%;
+  height: auto;
+  transition: all 0.6s;
+}
+
+.wind {
+  width: 50px;
+  height: 1px;
+  background: #dfdfdf;
+  position: absolute;
+  &.one {
+    left: 10%;
+    top: 0;
+    animation: windAnimation 1s infinite forwards linear;
+  }
+  &.two {
+    left: 20%;
+    top: 10%;
+    animation: windAnimation 1.8s infinite forwards linear;
+  }
+  &.three {
+    left: 10%;
+    top: 50%;
+    animation: windAnimation 1.2s infinite forwards linear;
+  }
+  &.four {
+    left: 0;
+    top: 60%;
+    animation: windAnimation 1.5s infinite forwards linear;
+  }
+}
+
+@keyframes windAnimation {
+  to {
+    transform: translateX(500%);
+  }
+}
+
+.changer {
+  margin-top: 20px;
+  button {
+    width: 100px;
+    height: 40px;
+    color: rgba($color: #000000, $alpha: 0.4);
+    border-radius: 20px;
+    transition: all 0.3s;
+    z-index: 5;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    &:hover {
+      box-shadow: 1px 1px 20px rgba($color: #000000, $alpha: 0.1);
+    }
+    &:focus {
+      outline: none;
+    }
+    &.active {
+      background: rgba($color: #000000, $alpha: 0.1);
+    }
+    &.deactive {
+      background: rgba($color: #ffffff, $alpha: 0);
+    }
+  }
+}

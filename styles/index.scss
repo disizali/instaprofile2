@@ -1,0 +1,20 @@
+@import url("~bootstrap/scss/bootstrap.scss");
+
+@import "navbar";
+@import "fonts";
+@import "splash";
+@import "vision";
+@import "links";
+@import "footer";
+@import "about";
+@import "news";
+@import "navy";
+
+body {
+  overflow-x: hidden;
+  margin-top: 120px;
+}
+
+.rtl {
+  direction: rtl;
+}

@@ -1,0 +1,64 @@
+.vision {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  text-align: center;
+  background-image: url("/static/images/mountain.png"),
+    linear-gradient(to top right, #2980c7, #4b99d8);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.vision-gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to top, #1b5e58 20%, rgba(255, 255, 255, 0));
+}
+
+.vision-info {
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  direction: rtl;
+  p {
+    color: rgb(230, 230, 230);
+  }
+  h3 {
+    color: white;
+  }
+}
+
+.vision-airplane {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: -10%;
+  top: 0;
+}
+
+@media (max-width: 991.98px) {
+  .vision-airplane {
+    width: 60%;
+  }
+  .vision-image {
+    width: 90%;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+  }
+  .vision {
+    p {
+      font-size: 13px;
+    }
+  }
+}
